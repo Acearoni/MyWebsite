@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%; /* Change from 3000px to 100% */
+    margin: 0 auto;
+    background-color: brown;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.upper-box {
+    width: 100%;
+    height: 125px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.lower-box {
+    width: 100%;
+    height: 125px;
+    background-color: black;
+    margin-top:auto;
+}
