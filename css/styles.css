@@ -35,3 +35,19 @@ body {
     height: 25px;
     margin-inline: 25px;
 }
+
+
+.logo-wrapper {
+    margin: 5px; /* Adjust spacing between logos */
+}
+
+
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(47, 211, 88, 0.692); /* Change color as needed */
+    pointer-events: none; /* Ensure cursor doesn't interfere with other elements */
+    z-index: 9999; /* Ensure the cursor appears above other elements */
+}
