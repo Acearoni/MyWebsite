@@ -43,7 +43,7 @@ body {
 }
 
 .nav-box {
-    width: 300px;
+    width: 200px;
     height: 65px;
     margin-inline: 25px;
     display: flex;
@@ -53,12 +53,12 @@ body {
 }
 
 .nav-box a{
-    color: rgb(63, 143, 83);
+    color: rgb(91, 187, 115);
     text-decoration: none;
 }
 .nav-box a:hover{
     cursor: pointer;
-    color: rgb(76, 175, 101);
+    color: rgb(62, 143, 82);
 }
 
 
@@ -92,7 +92,7 @@ body {
 
 .logo:hover {
     filter: grayscale(0%);
-    filter: brightness(120%);
+    filter: brightness(150%);
 }
 
 .logo-wrapper {
@@ -104,7 +104,12 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgba(47, 211, 88, 0.692);
+    background-color: rgb(111, 209, 135);
     pointer-events: none;
     z-index: 9999;
+}
+
+.main-image {
+    margin: 0 auto;
+    padding-top: 25px;
 }
