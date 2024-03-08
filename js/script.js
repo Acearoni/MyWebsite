@@ -28,6 +28,42 @@ document.addEventListener("DOMContentLoaded", function() {
             moveCursor();
         }
     });
-
+    
     var requestId = requestAnimationFrame(moveCursor);
+
+    // Add active class to HOME link when on index.html or /
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+        document.querySelector('.home-link').classList.add('active');
+    }
+
+    // Get the current URL path and remove the leading slash
+    var path = window.location.pathname.substr(1);
+
+    // Loop through all nav-box elements
+    document.querySelectorAll(".nav-box a").forEach(function(element) {
+        // Get the href attribute value
+        var href = element.getAttribute("href").substr(1);
+
+        // Check if the href matches the current URL path
+        if (href === path) {
+            // Add the active class to the parent nav-box element
+            element.parentElement.classList.add("active");
+        }
+    });
+
+    // Check if on aboutme.html page and add active class to About Me link
+    if (window.location.pathname === '/aboutme.html') {
+        document.querySelector('.nav-box a[href="aboutme.html"]').parentElement.classList.add('active');
+        document.querySelector('.container').style.backgroundImage = "url('/images/AboutMe.png')";
+    }
+
+    
+    // Check if on portfolio.html page and add active class to Portfolio link
+    if (window.location.pathname === '/portfolio.html') {
+        document.querySelector('.portfolio-link').classList.add('active');
+    }
+
+
+    
 });
+

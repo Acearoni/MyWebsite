@@ -43,12 +43,13 @@ body {
 }
 
 .nav-box {
-    width: 200px;
-    height: 65px;
+    width: 150px;
+    height: 55px;
     margin-inline: 25px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
-    align-content: baseline;
+    align-self: center;
     z-index: 1;
 }
 
@@ -81,7 +82,42 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS *//* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS *//* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS *//* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS */
+.middle-box {
+    display: flex;
+    height: 100%;
+    /* border: 1px solid rgb(117, 255, 152); */
+    z-index: 1;
+    margin: 0 auto;
+    justify-content:center;
+    align-items: center;
+}
 
+.active {
+    background-color: rgba(21, 255, 0, 0.212);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    height: 47px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS *//* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS *//* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS *//* THIS IS WHERE YOU ARE CURRENTLY WORKING WITHIN THE CSS */
 .logo {
     width: 25px;
     height: 25px;
@@ -107,9 +143,4 @@ body {
     background-color: rgb(111, 209, 135);
     pointer-events: none;
     z-index: 9999;
-}
-
-.main-image {
-    margin: 0 auto;
-    padding-top: 25px;
 }
