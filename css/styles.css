@@ -4,24 +4,42 @@
     height: 100vh;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(45, 226, 126);
+    background-color: rgba(45, 226, 126, 0.74);
     background-image: url(/images/Combo.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.middle-box-2 {
+    border: 1px solid white;
+    display: flex;
+    height: 740px;
+    justify-self: center;
+    align-items: center;
+}
+
+.left-image {
+    display: flex;
+    border: 2px solid rgb(114, 235, 134);
+    width: 434px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.left-page {
+    border: 1px solid rgb(87, 15, 146);
+    height: 600px;
+    width: 800px;
+    display: flex;
+}
+
+.right-page {
+    border: 1px solid rgb(250, 60, 60);
+    height: 600px;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content {
-    position: relative;
     z-index: 1;
 }
 
