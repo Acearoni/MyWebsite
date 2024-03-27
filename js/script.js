@@ -60,7 +60,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Check if on portfolio.html page and add active class to Portfolio link
     if (window.location.pathname === '/portfolio.html') {
-        document.querySelector('.portfolio-link').classList.add('active');
+        document.querySelector('.portfolio-link').classList.add('active')
+        document.querySelector('.container').style.backgroundImage = "url('/images/folio.png')";
+    }
+
+    if (window.location.pathname === '/contact.html') {
+        document.querySelector('.contact-link').classList.add('active')
+        document.querySelector('.container').style.backgroundImage = "url('/images/contact.png')";
     }
 
 
