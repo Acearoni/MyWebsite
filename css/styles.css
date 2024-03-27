@@ -18,6 +18,65 @@
     align-items: center;
 }
 
+.middle-box-3 {
+    border: 2px solid white;
+    margin: 0 auto;
+    height: 100vh;
+    width: 1914px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    border: 1px solid red;
+    width: 500px;
+    height: 700px;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.774);
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid green;
+}
+
+.content-body {
+    width: 400px;
+    margin: auto;
+}
+
+/* Initially hide the after image */
+#discord-img:hover + .after-img {
+    display: block;
+}
+
+#discord-img:hover {
+    content: url('/images/discordAfter.png');
+}
+
+.after-img {
+    display: none;
+}
+
+/* Adjust the size and position of the after image as needed */
+.after-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
 .left-image {
     display: flex;
     border: 2px solid rgb(74, 155, 86);
@@ -42,11 +101,11 @@
 
 .right-image {
     margin-left: 50px;
-
+    height: 200px;
 }
 
 .right-2 {
-    margin-left: 60px;
+    margin-left: 45px;
     
 }
 

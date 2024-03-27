@@ -69,7 +69,15 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.container').style.backgroundImage = "url('/images/contact.png')";
     }
 
-
+    document.addEventListener("DOMContentLoaded", function() {
+        var discordImg = document.getElementById("discord-img");
+        var afterImg = document.createElement("img");
+        afterImg.src = "/images/discordAfter.png";
+        afterImg.className = "after-img";
+        discordImg.parentNode.appendChild(afterImg);
+    });
     
 });
+
+
 
