@@ -11,7 +11,7 @@
 }
 
 .middle-box-2 {
-    border: 1px solid white;
+
     display: flex;
     height: 740px;
     justify-self: center;
@@ -20,23 +20,34 @@
 
 .left-image {
     display: flex;
-    border: 2px solid rgb(114, 235, 134);
+    border: 2px solid rgb(74, 155, 86);
     width: 434px;
     height: auto;
     margin-left: 100px;
 }
 
 .left-page {
-    border: 1px solid rgb(87, 15, 146);
+
     height: 600px;
     width: 800px;
     display: flex;
 }
 
 .right-page {
-    border: 1px solid rgb(250, 60, 60);
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
     width: 100%;
+}
+
+.right-image {
+    margin-left: 50px;
+
+}
+
+.right-2 {
+    margin-left: 60px;
+    
 }
 
 .content {
