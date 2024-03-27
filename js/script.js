@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var cursor = document.querySelector(".cursor");
     var currentX = 0;
     var currentY = 0;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         requestAnimationFrame(moveCursor);
     }
 
-    document.addEventListener("mousemove", function(event) {
+    document.addEventListener("mousemove", function (event) {
         targetX = event.clientX;
         targetY = event.clientY;
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             moveCursor();
         }
     });
-    
+
     var requestId = requestAnimationFrame(moveCursor);
 
     // Add active class to HOME link when on index.html or /
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var path = window.location.pathname.substr(1);
 
     // Loop through all nav-box elements
-    document.querySelectorAll(".nav-box a").forEach(function(element) {
+    document.querySelectorAll(".nav-box a").forEach(function (element) {
         // Get the href attribute value
         var href = element.getAttribute("href").substr(1);
 
@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.container').style.backgroundImage = "url('/images/AboutMe.png')";
     }
 
-    
     // Check if on portfolio.html page and add active class to Portfolio link
     if (window.location.pathname === '/portfolio.html') {
         document.querySelector('.portfolio-link').classList.add('active')
@@ -69,15 +68,21 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.container').style.backgroundImage = "url('/images/contact.png')";
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        var discordImg = document.getElementById("discord-img");
-        var afterImg = document.createElement("img");
-        afterImg.src = "/images/discordAfter.png";
-        afterImg.className = "after-img";
-        discordImg.parentNode.appendChild(afterImg);
+    // Add event listeners to handle image swap on hover for email images
+    var emailImg = document.getElementById('email-img');
+    emailImg.addEventListener('mouseover', function () {
+        emailImg.src = '/images/emailAfter.png';
     });
-    
+    emailImg.addEventListener('mouseout', function () {
+        emailImg.src = '/images/emailBefore.png';
+    });
+
+    // Add event listeners to handle image swap on hover for soon images
+    var soonImg = document.getElementById('soon-img');
+    soonImg.addEventListener('mouseover', function () {
+        soonImg.src = '/images/soonAfter.png';
+    });
+    soonImg.addEventListener('mouseout', function () {
+        soonImg.src = '/images/soonBefore.png';
+    });
 });
-
-
-

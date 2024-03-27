@@ -49,6 +49,11 @@
     margin: auto;
 }
 
+.content-body:hover {
+    cursor: pointer;
+}
+
+
 /* Initially hide the after image */
 #discord-img:hover + .after-img {
     display: block;
@@ -71,6 +76,9 @@
     height: 100%;
 }
 
+.email-img:hover {
+    content: url('/images/emailAfter.png');
+}
 
 
 
