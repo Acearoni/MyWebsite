@@ -10,6 +10,65 @@
     background-size: cover;
 }
 
+.left-button {
+    background-color: rgba(26, 26, 26, 0.281);
+    border-style: none;
+    border-radius: 75%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.left-button:hover , .right-button:hover{
+    background-color: rgba(144, 226, 162, 0.24);
+}
+
+.left-button:active , .right-button:active{
+    background-color: rgb(129, 230, 163);
+}
+
+.right-button {
+    background-color: rgba(26, 26, 26, 0.281);
+    border-style: none;
+    border-radius: 75%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#project-container {
+    border: 10px solid brown;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1; /* Set initial opacity to 1 */
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+
+
+.middle-box-p {
+
+    height: 790px;
+    width: 1917px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
 .middle-box-2 {
 
     display: flex;
@@ -19,7 +78,7 @@
 }
 
 .middle-box-3 {
-    border: 2px solid white;
+
     margin: 0 auto;
     height: 100vh;
     width: 1914px;
@@ -28,7 +87,7 @@
 }
 
 .content {
-    border: 1px solid red;
+    /* black boxes on contact page */
     width: 500px;
     height: 700px;
     align-self: center;
@@ -40,8 +99,7 @@
 .content-header {
     width: 200px;
     margin: 0 auto;
-    margin-top: 10px;
-    border: 1px solid green;
+    margin-top: 50px;
 }
 
 .content-body {
@@ -52,6 +110,7 @@
 .content-body:hover {
     cursor: pointer;
 }
+
 
 
 /* Initially hide the after image */
