@@ -6,7 +6,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: rgba(45, 226, 126, 0.74);
-    background-image: url(/images/Combo.jpg);
+    background-image: url(images/Combo.jpg);
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -184,7 +184,7 @@
 }
 
 #discord-img:hover {
-    content: url('/images/discordAfter.png');
+    content: url('images/discordAfter.png');
 }
 
 .after-img {
@@ -201,7 +201,7 @@
 }
 
 .email-img:hover {
-    content: url('/images/emailAfter.png');
+    content: url('images/emailAfter.png');
 }
 
 
