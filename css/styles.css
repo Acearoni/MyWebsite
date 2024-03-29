@@ -42,16 +42,63 @@
     cursor: pointer;
 }
 
+
+
+#video-player-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(31, 31, 31, 0.541);
+    border-radius: 10px;
+    border: 1px solid rgb(104, 248, 104);
+}
+
+#close-button {
+    justify-self: center;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#video-player {
+    width: 100%;
+    height: calc(100% - 50px); /* Adjust the height to leave space for the button */
+    outline: none;
+}
+
+/* Style for overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: none; /* Initially hidden */
+}
+
+
+
 #project-container {
-    border: 10px solid brown;
-    width: 500px;
-    height: 500px;
+    /* border: 4px solid brown; */
+    width: 1000px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 1; /* Set initial opacity to 1 */
     transition: opacity 0.5s ease; /* Add transition for opacity */
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Center the background image */
+    cursor: pointer;
 }
+
 
 
 

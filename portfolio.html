@@ -10,7 +10,13 @@
 </head>
 
 <body>
+    <div id="overlay"></div>
+    <div id="video-player-container" style="display: none;">
+        <button id="close-button">CLOSE</button>
+        <video id="video-player" controls autoplay></video>
 
+    </div>
+    
     <div class="container">
         <div class="upper-box">
             <div class="nav-bar">
@@ -44,8 +50,6 @@
             </div>
             <div id="project-container">
                 <div id="project-image"></div>
-                <h2 id="project-title"></h2>
-                <p id="project-description"></p>
             </div>
             <div id="navigation-buttons">
                 <button id="next-button" class="right-button"><img src="/images/arrowRight.png" alt=""></button>
