@@ -194,10 +194,17 @@
 }
 
 .email-img:hover {
-    content: url('images/emailAfter.png');
+    content: url('../images/emailAfter.png');
 }
 
 
+#discord-img:hover + .after-img {
+    display: block;
+}
+
+#discord-img:hover {
+    content: url('../images/discordAfter.png'); /* Adjust the path to go up one level to the images directory */
+}
 
 
 
