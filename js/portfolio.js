@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Define an array of project image paths
     const projectImages = [
-        "/images/vendored.png",
-        "/images/project2.jpg",
-        "/images/project3.jpg"
+        "images/vendored.png",
+        "images/project2.jpg",
+        "images/project3.jpg"
     ];
 
     // Define an array of project video URLs corresponding to each project image
     const projectVideos = [
-        "/videos/vendored.mp4",
+        "videos/vendored.mp4",
         "https://www.youtube.com/watch?v=Vn4m1dWy4n8&ab_channel=xQc",
         "https://www.youtube.com/watch?v=j3y55VIAdX8&ab_channel=xQcReacts"
     ];
