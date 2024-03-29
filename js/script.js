@@ -52,18 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Check if on aboutme.html page and add active class to About Me link
-    if (window.location.pathname === 'https://acearoni.github.io/MyWebsite/aboutme.html') {
+    if (window.location.pathname === '/aboutme.html') {
         document.querySelector('.nav-box a[href="aboutme.html"]').parentElement.classList.add('active');
         document.querySelector('.container').style.backgroundImage = "url('../images/AboutMe.png')";
     }
 
     // Check if on portfolio.html page and add active class to Portfolio link
-    if (window.location.pathname === 'https://acearoni.github.io/MyWebsite/portfolio.html') {
+    if (window.location.pathname === '/portfolio.html') {
         document.querySelector('.portfolio-link').classList.add('active')
         document.querySelector('.container').style.backgroundImage = "url('../images/folio.png')";
     }
 
-    if (window.location.pathname === 'https://acearoni.github.io/MyWebsite/contact.html') {
+    if (window.location.pathname === '/contact.html') {
         document.querySelector('.contact-link').classList.add('active')
         document.querySelector('.container').style.backgroundImage = "url('../images/contact.png')";
     }
