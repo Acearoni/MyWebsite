@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add active class to HOME link when on index.html or /
     if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
         document.querySelector('.home-link').classList.add('active');
+        console.log("Active Window INDEX");
     }
 
     // Get the current URL path and remove the leading slash
@@ -54,18 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check if on aboutme.html page and add active class to About Me link
     if (window.location.pathname === '/aboutme.html') {
         document.querySelector('.nav-box a[href="aboutme.html"]').parentElement.classList.add('active');
-        document.querySelector('.container').style.backgroundImage = "url('/images/AboutMe.png')";
+        document.querySelector('.container').style.backgroundImage = "url('../images/AboutMe.png')";
+        console.log("Active Window about");
     }
 
     // Check if on portfolio.html page and add active class to Portfolio link
     if (window.location.pathname === '/portfolio.html') {
         document.querySelector('.portfolio-link').classList.add('active')
-        document.querySelector('.container').style.backgroundImage = "url('/images/folio.png')";
+        document.querySelector('.container').style.backgroundImage = "url('../images/folio.png')";
     }
 
     if (window.location.pathname === '/contact.html') {
         document.querySelector('.contact-link').classList.add('active')
-        document.querySelector('.container').style.backgroundImage = "url('/images/contact.png')";
+        document.querySelector('.container').style.backgroundImage = "url('../images/contact.png')";
     }
 
     // Add event listeners to handle image swap on hover for email images
