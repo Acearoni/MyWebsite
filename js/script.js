@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Get the current URL path and remove the leading slash
     var path = window.location.pathname.substr(1);
+    // Adjust path for GitHub Pages deployment
+    if (window.location.hostname === 'acearoni.github.io') {
+        path = '/MyWebsite/' + path;
+    }
 
     // Loop through all nav-box elements
     document.querySelectorAll(".nav-box a").forEach(function (element) {
@@ -53,19 +57,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Check if on aboutme.html page and add active class to About Me link
-    if (window.location.pathname === '/aboutme.html') {
+    if (path === 'aboutme.html') {
         document.querySelector('.nav-box a[href="aboutme.html"]').parentElement.classList.add('active');
         document.querySelector('.container').style.backgroundImage = "url('../images/AboutMe.png')";
         console.log("Active Window about");
     }
 
     // Check if on portfolio.html page and add active class to Portfolio link
-    if (window.location.pathname === '/portfolio.html') {
+    if (path === 'portfolio.html') {
         document.querySelector('.portfolio-link').classList.add('active')
         document.querySelector('.container').style.backgroundImage = "url('../images/folio.png')";
     }
 
-    if (window.location.pathname === '/contact.html') {
+    if (path === 'contact.html') {
         document.querySelector('.contact-link').classList.add('active')
         document.querySelector('.container').style.backgroundImage = "url('../images/contact.png')";
     }
