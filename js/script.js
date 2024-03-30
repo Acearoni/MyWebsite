@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var requestId = requestAnimationFrame(moveCursor);
 
     // Add active class to HOME link when on index.html or /
-    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+    if (window.location.pathname == '/index.html' || window.location.pathname == '/') {
         document.querySelector('.home-link').classList.add('active');
         console.log("Active Window INDEX");
     }
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get the current URL path and remove the leading slash
     var path = window.location.pathname.substr(1);
     // Adjust path for GitHub Pages deployment
-    if (window.location.hostname === 'acearoni.github.io') {
+    if (window.location.hostname == 'acearoni.github.io') {
         path = '/MyWebsite/' + path;
     }
 
@@ -50,26 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
         var href = element.getAttribute("href").substr(1);
 
         // Check if the href matches the current URL path
-        if (href === path) {
+        if (href == path) {
             // Add the active class to the parent nav-box element
             element.parentElement.classList.add("active");
         }
     });
 
     // Check if on aboutme.html page and add active class to About Me link
-    if (path === 'aboutme.html') {
+    if (path == 'aboutme.html') {
         document.querySelector('.nav-box a[href="aboutme.html"]').parentElement.classList.add('active');
         document.querySelector('.container').style.backgroundImage = "url('https://acearoni.github.io/MyWebsite/images/AboutMe.png')";
         console.log(path);
     }
 
     // Check if on portfolio.html page and add active class to Portfolio link
-    if (path === 'portfolio.html') {
+    if (path == 'portfolio.html') {
         document.querySelector('.portfolio-link').classList.add('active')
         document.querySelector('.container').style.backgroundImage = "url('https://acearoni.github.io/MyWebsite/images/folio.png')";
     }
 
-    if (path === 'contact.html') {
+    if (path == 'contact.html') {
         document.querySelector('.contact-link').classList.add('active')
         document.querySelector('.container').style.backgroundImage = "url('https://acearoni.github.io/MyWebsite/images/contact.png')";
     }
