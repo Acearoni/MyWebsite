@@ -59,19 +59,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check if on aboutme.html page and add active class to About Me link
     if (path === 'aboutme.html') {
         document.querySelector('.nav-box a[href="aboutme.html"]').parentElement.classList.add('active');
-        document.querySelector('.container').style.backgroundImage = "url('../images/AboutMe.png')";
+        document.querySelector('.container').style.backgroundImage = "url('https://acearoni.github.io/MyWebsite/images/AboutMe.png')";
         console.log(path);
     }
 
     // Check if on portfolio.html page and add active class to Portfolio link
     if (path === 'portfolio.html') {
         document.querySelector('.portfolio-link').classList.add('active')
-        document.querySelector('.container').style.backgroundImage = "url('../images/folio.png')";
+        document.querySelector('.container').style.backgroundImage = "url('https://acearoni.github.io/MyWebsite/images/folio.png')";
     }
 
     if (path === 'contact.html') {
         document.querySelector('.contact-link').classList.add('active')
-        document.querySelector('.container').style.backgroundImage = "url('../images/contact.png')";
+        document.querySelector('.container').style.backgroundImage = "url('https://acearoni.github.io/MyWebsite/images/contact.png')";
     }
 
     // Add event listeners to handle image swap on hover for email images
