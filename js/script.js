@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (path === 'aboutme.html') {
         document.querySelector('.nav-box a[href="aboutme.html"]').parentElement.classList.add('active');
         document.querySelector('.container').style.backgroundImage = "url('../images/AboutMe.png')";
-        console.log("Active Window about");
+        console.log(path);
     }
 
     // Check if on portfolio.html page and add active class to Portfolio link
