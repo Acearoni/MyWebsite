@@ -71,26 +71,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add event listeners to handle image swap on hover for email images
     var emailImg = document.getElementById('email-img');
     emailImg.addEventListener('mouseover', function () {
-        emailImg.src = 'images/emailAfter.png';
+        emailImg.src = './images/emailAfter.png';
     });
     emailImg.addEventListener('mouseout', function () {
-        emailImg.src = 'images/emailBefore.png';
+        emailImg.src = './images/emailBefore.png';
     });
 
     // Add event listeners to handle image swap on hover for soon images
     var soonImg = document.getElementById('soon-img');
     soonImg.addEventListener('mouseover', function () {
-        soonImg.src = 'images/soonAfter.png';
+        soonImg.src = './images/soonAfter.png';
     });
     soonImg.addEventListener('mouseout', function () {
-        soonImg.src = 'images/soonBefore.png';
+        soonImg.src = './images/soonBefore.png';
     });
 
     var discordImg = document.getElementById('discord-img');
     discordImg.addEventListener('mouseover', function () {
-        discordImg.src = 'images/discordAfter.png';
+        discordImg.src = './images/discordAfter.png';
     });
     discordImg.addEventListener('mouseout', function () {
-        discordImg.src = 'images/discordBefore.png';
+        discordImg.src = './images/discordBefore.png';
     });
 });
