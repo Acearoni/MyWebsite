@@ -5,12 +5,13 @@
     height: 100vh;
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(24, 129, 72, 0.74);
+    background-color: rgba(96, 223, 153, 0.507);
     background-image: url(../images/Combo.jpg);
     background-position: center;
     background-size: cover;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -123,23 +124,24 @@
 }
 
 .tester {
-
+    display: flex;
     align-self: center;
-    height: 600px;
+    height: 790px;
     align-content: center;
     margin: auto;
+
+
 }
 
 
 
 .middle-box-2 {
-    width: 1900px;
-    height: 740px;
     display: flex;
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
-
     align-self: center;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 10px;
 }
 
 .middle-box-3 {
@@ -149,6 +151,7 @@
     width: 1914px;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .content {
